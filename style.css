@@ -202,7 +202,11 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
 
 @media only screen and (max-width: 750px) {
   #header {
-    text-align: left;
+    text-align: center;
+  }
+
+  #socialmediaicon{
+    display:none;
   }
   .fa {
     padding: 10px;
