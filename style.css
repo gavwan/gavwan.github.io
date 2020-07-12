@@ -152,6 +152,17 @@ body{
   color: #ffffff;
 }
 
+#information, #information p {
+  width: 95%;
+  margin:0 auto ;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  text-align: center;
+  line-height: 3.6;
+  color: #ffffff;
+}
+
+
 /* Contact Us Page Styling*/
 input[type=text], select, textarea {
   width: 100%;
