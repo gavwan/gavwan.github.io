@@ -47,7 +47,7 @@ body{
   margin: auto;
 } */
 
-#masterheader {
+#master-header {
   width:100%;
   background-color: #ffffff;
 }
@@ -59,14 +59,10 @@ body{
   margin: auto;
 }
 
-#logo{
-
-}
-
-#socialmediaicon{
+#social-media-icon{
   position:relative;
   float: right;
-  padding: 30px 0px 0 0;
+  padding: 30px 10px 0 0;
   text-align: right;
   display: inline-block;
 }
@@ -109,7 +105,7 @@ body{
   text-decoration: underline;
 }
 
-#burgermenulabel{
+#burger-menu-label{
     color:white;
     margin: 0 30px 0 0;
     font-size: 26px;
@@ -211,12 +207,48 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
   clear: both;
 }
 
+.master-footer {
+  width:100%;
+  background-color: #2f3036;
+}
+
+.main-footer {
+  width:100%;
+  max-width: 960px;
+  top: 0px;
+  margin: auto;
+  padding: 1px 2%;
+}
+
+.left-footer {
+  float: left;
+}
+
+.footer-nav a {
+  color: #000000;
+  font-size: 20px;
+}
+
+.footer-nav {
+  list-style: none;
+  float: right;
+  padding: 20px 0 0;
+}
+
+.footer-nav li {
+  float: left;
+}
+
+.footer-nav li + li {
+  margin-left: 15px;
+}
+
 @media only screen and (max-width: 750px) {
   #header {
     text-align: center;
   }
 
-  #socialmediaicon{
+  #social-media-icon{
     display:none;
   }
   .fa {
@@ -234,7 +266,7 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
     background: #2f3036;
   }
 
-  #burgermenulabel {
+  #burger-menu-label {
       display: block;
       cursor: pointer;
 
