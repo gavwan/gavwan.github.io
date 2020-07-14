@@ -26,7 +26,9 @@ h2{
 
 h3{
   font-size: 2.0em;
-  color: #ffffff;
+  color: #000000;
+  text-align: left;
+  padding: 20px 0 0 20px;
 }
 
 body{
@@ -128,34 +130,51 @@ body{
   background-position: top;
 }
 
-#indexinformation, #indexinformation p {
+.page-info {
   width: 95%;
   margin:0 auto ;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   padding: 20px;
   text-align: center;
-  line-height: 3.6;
+
+}
+
+.page-info p {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  line-height: 3.5;
   color: #ffffff;
 }
 
-#contactinformation, #contactinformation p{
-  width: 95%;
-  margin:0 auto ;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 20px;
-  text-align: center;
-  line-height: 3.6;
-  color: #ffffff;
+#reviewinformation article, #reviewinformation p {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  padding: 0%;
+  line-height: 3.0;
 }
 
-#information, #information p {
-  width: 95%;
-  margin:0 auto ;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  text-align: center;
-  line-height: 3.6;
-  color: #ffffff;
+.articles::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.articles a {
+  color: #000000
+}
+
+#reviewinformation p {
+  padding-left: 20px;
+}
+
+#reviewinformation article + article {
+  margin-top: 20px;
+}
+
+#reviewinformation img {
+  float: right;
+  padding: 5px;
 }
 
 
@@ -214,8 +233,11 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
 }
 
 .main-footer {
-  background-color: #000000;
-  top: 0px;
+  background-color: #00FFFF;
+  width: 100%;
+  max-width: 960px;
+  left: 0;
+  bottom: 0;
   margin: auto;
   padding: 0px 2%;
 }
@@ -242,7 +264,7 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
 .footer-nav li + li {
   margin-left: 15px;
 }
-
+/* creating a responsive website */
 @media only screen and (max-width: 750px) {
   #header {
     text-align: center;
@@ -304,8 +326,12 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
   #toggle:checked + .menu {
       display: block;
   }
-}
 
+  #reviewinformation img {
+    height: 200px;
+  }
+
+}
 
 @media only screen and (max-width: 600px) {
   .responsive {
@@ -333,18 +359,16 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
 
 /* Set a specific color for each brand */
 
-/* Facebook */
 .fa-facebook {
   background: #3B5998;
   color: white;
 }
 
 .fa-instagram {
-  background: #125688;
+  background: #C13584;
   color: white;
 }
 
-/* Twitter */
 .fa-twitter {
   background: #55ACEE;
   color: white;
