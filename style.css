@@ -164,8 +164,14 @@ body{
   color: #000000
 }
 
+.articles a:hover{
+  text-decoration: underline;
+  color: #0000ff;
+}
+
 #reviewinformation p {
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 #reviewinformation article + article {
