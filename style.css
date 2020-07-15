@@ -26,10 +26,11 @@ h2{
 }
 
 h3{
-  font-size: 2.0em;
+  font-size: 2.2em;
   color: #000000;
   text-align: left;
   padding: 20px 20px 0 20px;
+  text-decoration: underline;
   font-family: Trebuchet MS;
 }
 
@@ -143,24 +144,24 @@ body{
   color: #ffffff;
 }
 
-.review {
-  width: 95%;
-  margin:0 auto ;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  text-align: center;
-}
-
 .reviewarticles {
   background-color: #ffffff;
   text-align: left;
 }
 
 .reviewarticles p {
-  padding: 0 5px 0 5px;
+  padding: 0 20px 0 20px;
   line-height: 2.0em;
   background: rgba(0, 0, 0, 0);
   color: #000000;
+
+}
+
+.reviewarticles img {
+  float: right;
+  width: 250px;
+  height: 250px;
+  padding-right: 10px;
 }
 
 #reviewinformation article, #reviewinformation p {
@@ -194,11 +195,6 @@ body{
 #reviewinformation article + article {
   margin-top: 20px;
 }
-
-/* #reviewinformation img {
-  float: right;
-  padding: 10px;
-} */
 
 .image-box {
   width: 250px;
@@ -354,7 +350,6 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
     margin: 0;
     width:100%;
     padding-left: 15px;
-
   }
 
   iframe{
@@ -396,13 +391,15 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
     height: 300px;
   }
 
+  .reviewarticles img {
+    display:block;
+    float:none;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    width: 300px;
+    height: 300px;
 
-  /* .articles p {
-    margin:0;
-    font:16px/1.25 sans-serif;
-    color: #4CB3E8;
-    text-align:justify;
-  } */
+  }
 }
 
 /* Style all font awesome icons */
