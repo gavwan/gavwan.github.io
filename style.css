@@ -22,6 +22,7 @@ h2{
   font-size: 3.0em;
   text-decoration: underline;
   color: #ffffff;
+  font-family: Trebuchet MS;
 }
 
 h3{
@@ -29,6 +30,7 @@ h3{
   color: #000000;
   text-align: left;
   padding: 20px 20px 0 20px;
+  font-family: Trebuchet MS;
 }
 
 body{
@@ -381,7 +383,7 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
   }
 
   .articles h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
 
   }
 
