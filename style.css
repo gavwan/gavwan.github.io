@@ -161,11 +161,6 @@ body{
   color: #000000;
 }
 
-
-
-
-
-
 #reviewinformation article, #reviewinformation p {
   background-color: #ffffff;
   color: #000000;
@@ -374,9 +369,9 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
       display: block;
   }
 
-  /* .image-box {
-    width: 350px;
-    height: 350px;
+  .image-box {
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     margin: 10px 15px;
     padding: 0px;
@@ -389,7 +384,7 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
 
   .image-box:hover img {
     transform: scale(1.5);
-  } */
+  }
 
 }
 
