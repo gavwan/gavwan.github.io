@@ -369,23 +369,6 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
       display: block;
   }
 
-  .image-box {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    margin: 10px 15px;
-    padding: 0px;
-  }
-
-  .image-box img {
-    width: 100%;
-    transition: 0.5s all ease-in-out;
-  }
-
-  .image-box:hover img {
-    transform: scale(1.5);
-  }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -396,6 +379,28 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
     width: 100%;
     margin-top: 0;
   }
+
+  .articles h3 {
+    font-size: 1.5em;
+
+  }
+
+  .image-box {
+    display:block;
+    float:none;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    width: 300px;
+    height: 300px;
+  }
+
+
+  /* .articles p {
+    margin:0;
+    font:16px/1.25 sans-serif;
+    color: #4CB3E8;
+    text-align:justify;
+  } */
 }
 
 /* Style all font awesome icons */
