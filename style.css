@@ -374,7 +374,7 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
       display: block;
   }
 
-  .image-box {
+  /* .image-box {
     width: 350px;
     height: 350px;
     overflow: hidden;
@@ -389,7 +389,7 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
 
   .image-box:hover img {
     transform: scale(1.5);
-  }
+  } */
 
 }
 
