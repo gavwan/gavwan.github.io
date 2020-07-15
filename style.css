@@ -269,6 +269,7 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
   clear: both;
 }
 
+/* All the relevant info for the footer */
 .master-footer {
   width:100%;
   height: 100px;
@@ -374,11 +375,11 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
   }
 
   .image-box {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     overflow: hidden;
-    margin: 10px 10px;
-    float: right;
+    margin: 10px 15px;
+    padding: 0px;
   }
 
   .image-box img {
