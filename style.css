@@ -180,21 +180,21 @@ body{
 } */
 
 .image-box {
-            width: 250px;
-            height: 250px;
-            overflow: hidden;
-            margin: 10px 10px;
-            float: right;
-        }
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: 10px 10px;
+  float: right;
+}
 
-        .image-box img {
-            width: 100%;
-            transition: 0.5s all ease-in-out;
-        }
+.image-box img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
 
-        .image-box:hover img {
-            transform: scale(1.5);
-        }
+.image-box:hover img {
+  transform: scale(1.5);
+}
 
 
 /* Contact Us Page Styling*/
@@ -257,7 +257,7 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
   width: 100%;
   max-width: 960px;
   margin: auto;
-  padding: 0px 2%;
+  padding: 0px 3%;
 }
 
 .left-footer {
@@ -349,8 +349,21 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
       display: block;
   }
 
-  #reviewinformation img {
+  .image-box {
+    width: 200px;
     height: 200px;
+    overflow: hidden;
+    margin: 10px 10px;
+    float: right;
+  }
+
+  .image-box img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .image-box:hover img {
+    transform: scale(1.5);
   }
 
 }
