@@ -247,16 +247,15 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
 
 .master-footer {
   width:100%;
+  height: 100px;
   background-color: #2f3036;
-  color: #000000;
+  color: #ffffff;
 }
 
 .main-footer {
   background-color: #00FFFF;
   width: 100%;
   max-width: 960px;
-  left: 0;
-  bottom: 0;
   margin: auto;
   padding: 0px 2%;
 }
@@ -265,8 +264,12 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
   float: left;
 }
 
+.left-footer a {
+  color: #72d4d4;
+}
+
 .footer-nav a {
-  color: #000000;
+  color: #ffffff;
   font-size: 20px;
 }
 
