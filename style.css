@@ -132,7 +132,6 @@ body{
   background: rgba(0, 0, 0, 0.6);
   padding: 20px;
   text-align: center;
-
 }
 
 .page-info p {
@@ -141,6 +140,31 @@ body{
   line-height: 3.5;
   color: #ffffff;
 }
+
+.review {
+  width: 95%;
+  margin:0 auto ;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  text-align: center;
+}
+
+.reviewarticles {
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.reviewarticles p {
+  padding: 0 5px 0 5px;
+  line-height: 2.0em;
+  background: rgba(0, 0, 0, 0);
+  color: #000000;
+}
+
+
+
+
+
 
 #reviewinformation article, #reviewinformation p {
   background-color: #ffffff;
