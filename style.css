@@ -44,11 +44,6 @@ body{
   background-color: #ffffff;
 }
 
-/* #page {
-  max-width: 960px;
-  margin: auto;
-} */
-
 #master-header {
   width:100%;
   background-color: #ffffff;
@@ -118,6 +113,7 @@ body{
     text-align: right;
 }
 
+/* hide the burger menu when not in responsive mode */
 #toggle {
   display: none;
 }
@@ -151,7 +147,7 @@ body{
   color: #000000;
   text-align: left;
   padding: 0%;
-  line-height: 3.0;
+  line-height: 2.5;
 }
 
 .articles::after {
@@ -178,10 +174,27 @@ body{
   margin-top: 20px;
 }
 
-#reviewinformation img {
+/* #reviewinformation img {
   float: right;
-  padding: 5px;
-}
+  padding: 10px;
+} */
+
+.image-box {
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            margin: 10px 10px;
+            float: right;
+        }
+
+        .image-box img {
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+        }
+
+        .image-box:hover img {
+            transform: scale(1.5);
+        }
 
 
 /* Contact Us Page Styling*/
