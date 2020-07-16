@@ -22,7 +22,7 @@ h2{
   font-size: 3.0em;
   text-decoration: underline;
   color: #ffffff;
-  font-family: Trebuchet MS;
+  font: 'Fira Sans', sans-serif;
 }
 
 h3{
@@ -31,7 +31,7 @@ h3{
   text-align: left;
   padding: 20px 20px 0 20px;
   text-decoration: underline;
-  font-family: Trebuchet MS;
+  font: 'Fira Sans', sans-serif;
 }
 
 h4{
