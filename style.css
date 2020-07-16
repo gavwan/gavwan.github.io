@@ -279,7 +279,7 @@ body{
   background-color: #45a049;
 }
 
-.contactrow label[for=fname], [for=lname], [for=email], [for=subject]{
+.contactrow label[for=name], [for=email], [for=subject], [for=message] {
     color: #ffffff;
     font-family: Verdana;
     font-size: 15px;
@@ -380,7 +380,7 @@ body{
     height: 0;
     display: none;
     float: right;
-    opacity: 0.9;
+    opacity: 1;
     visibility: visible;
   }
 
@@ -389,6 +389,22 @@ body{
     border: 0.5px solid #EAEAEB;
     margin: 0;
     width:100%;
+    padding-left: 15px;
+  }
+
+  .search-container button {
+    display: flex;
+    border: 0.5px solid #EAEAEB;
+    margin: 0;
+    width:100%;
+  }
+
+  .search-container input[type=text] {
+    display: none;
+    border: 0.5px solid #EAEAEB;
+    margin: 0;
+    width:100%;
+    line-height: 60px;
     padding-left: 15px;
   }
 
@@ -447,8 +463,8 @@ body{
   }
 
   .reviewarticles img {
-    display:block;
-    float:none;
+    display: block;
+    float: none;
     text-align: center;
     margin: 0 auto 0 auto;
     width: 300px;
