@@ -178,6 +178,11 @@ body{
   line-height: 2.5;
 }
 
+#indexinformation p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .articles::after {
   content: "";
   clear: both;
