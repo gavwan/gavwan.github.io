@@ -42,29 +42,33 @@
         <label for="toggle" id="burger-menu-label">&#9776;</label>
         <input type="checkbox" id="toggle"/>
         <div class="menu">
-            <a href="index.html" class= "active">Home</a>
-						<a href="reviews.html">Reviews</a>
-			      <a href="howto.html">How to</a>
-			      <a href="about.html">About</a>
-            <a href="contactus.html">Contact Us</a>
+          <a href="index.html" class= "active">Home</a>
+					<a href="reviews.html">Reviews</a>
+		      <a href="howto.html">How to</a>
+					<a href="about.html">About</a>
+					<a href="contactus.html">Contact Us</a>
+					<div class="search-container">
+				    <!-- <form action="/action_page.php"> -->
+							<button id="search" type="submit"><i class="fa fa-search"></i></button>
+				      <input type="text" placeholder="Search.." name="search">
+				    <!-- </form> -->
+				  </div>
 		    </div>
     	</div>
 		</div>
 		<div class="content">
-      <div class="page-info" id="indexinformation">
+      <div class="page-info" id="indexinformation2">
 		     <h2>Home</h2>
 		     <p>
 					 Welcome to Tech Finder UK! Here you can find budget/student friendly products at a lower price but offers similar functionality to more expensive products. We will run through the usability of each product as either as a every day carry or something suitable for your tech!
-				 </p>
-				 <p>
 					 We will have how to’s and reviews so stay tuned!
-         </p>
-				 <h2> Latest Reviews</h2>
+					</p>
+				 <h2>Latest Reviews</h2>
 				 <article class="articles" id="post-00003">
            <h3><a href="reviews/post-00003/post-00003.html">Nonda USB-C to USB-A Adapter Review</a></h3>
            <div class="image-box">
              <a href="reviews/post-00003/post-00003.html">
-               <img src="images/NondaUSBDongle.jpg" alt="Nonda USB-C Dongle">
+               <img src="images/post-00003.jpg" alt="Nonda USB-C Dongle">
              </a>
            </div>
            <p>As more and more devices only USB-C ports nowadays, for using USB-A accessories must be difficult right? Wrong! We picked up this 2 pack of USB-A to USB-C adapter from an unknown brand off Amazon, nonda. Here's our thoughts on this product! <a href="reviews/post-00003/post-00003.html" class="extend-article">[...]</a></p>
@@ -90,5 +94,9 @@
 			</ul>
 		</div>
 	</footer>
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/search.js"></script>
+
 </body>
 </html>

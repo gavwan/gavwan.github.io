@@ -76,24 +76,25 @@ body{
 .nav {
   width: 100%;
   background: #2f3036;
+  height: 60px;
 }
 
 .menu {
   width: 100%;
   max-width: 960px;
   list-style-type:none;
-    display:block;
-    margin:0 auto;
+  display:block;
+  margin:0 auto;
   text-align: left;
 }
 
 .menu a {
   display: inline-block;
-  min-width:140px;
+  min-width: 115px;
   line-height: 60px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  color: #fff;
-  font-size: 1.6em;
+  color: #ffffff;
+  font-size: 1.4em;
   background: #2f3036;
   text-align: center;
   text-decoration: none;
@@ -102,13 +103,44 @@ body{
 /*Hover over the nav bar to underline*/
 .menu a:hover{
   text-decoration: underline;
+  background-color: #bababa
 }
 
 /*Active page shows a colour change*/
 .menu a.active{
-  background-color: #9e9e9e;
+  background-color: #878787;
   color: white;
   text-decoration: underline;
+}
+
+.search-container {
+  float: right;
+}
+
+.search-container input[type=text] {
+  display: none;
+  min-width: 250px;
+  line-height: 40px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin-top: 7.5px;
+  padding: 0 0 0 10px;
+  font-size: 1.0em;
+  color: #a9a9a9;
+  background-color: #ffffff;
+}
+
+.search-container button {
+  margin: 0;
+  float: right;
+  padding: 7.5px 7.5px;
+  background: #2f3036;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
 }
 
 #burger-menu-label{
@@ -170,7 +202,7 @@ body{
   padding: 10px 10px 0 10px;
 }
 
-#reviewinformation article, #reviewinformation p {
+#reviewinformation article, #reviewinformation p, #indexinformation2 article, #indexinformation2 p {
   background-color: #ffffff;
   color: #000000;
   text-align: left;
@@ -178,7 +210,7 @@ body{
   line-height: 2.5;
 }
 
-#indexinformation p {
+#indexinformation p, #indexinformation2 p {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -226,7 +258,7 @@ body{
 
 
 /* Contact Us Page Styling*/
-input[type=text], select, textarea {
+.contactrow input[type=text], .contactrow select, .contactrow textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -235,7 +267,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+.contactrow input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -243,19 +275,16 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+.contactrow input[type=submit]:hover {
   background-color: #45a049;
 }
 
-label[for=fname], [for=lname], [for=email], [for=subject]{
-    color:white;
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 60px;
-    display: none;
-    width: 30px;
-    float:right;
-    text-align: right;
+.contactrow label[for=fname], [for=lname], [for=email], [for=subject]{
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 15px;
+    float: left;
+    text-align: left;
 }
 
 /* Create two columns that float next to eachother */
@@ -375,6 +404,21 @@ label[for=fname], [for=lname], [for=email], [for=subject]{
 
   #toggle:checked + .menu {
       display: block;
+  }
+
+  .nav .search-container {
+    float: none;
+  }
+
+  /* .nav input[type=text], */
+  .nav .search-container button {
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
+  .nav input[type=text] {
+    border: 1px solid #ccc;
   }
 
 }
