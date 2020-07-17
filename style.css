@@ -219,8 +219,8 @@ body{
 }
 
 #reviewinformation p {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
+  margin: 0;
 }
 
 #reviewinformation article + article {
@@ -487,8 +487,12 @@ body{
   #searchUL h3 {
     font-size: 1.6em;
     padding-top: 7px;
-    padding-bottom: 3px;
+    padding-bottom: 1px;
     line-height: 1.7em;
+  }
+
+  #searchUL{
+    padding-left: 10px;
   }
 
 }
@@ -561,4 +565,35 @@ body{
 .fa-youtube {
   background: #bb0000;
   color: white;
+}
+.checked {
+  color: orange;
+}
+.rating-box {
+  position:relative;
+  vertical-align: middle;
+  font-size: 3em;
+  font-family: FontAwesome;
+  display: inline-block;
+  color: #a2a2a2;
+  margin-left: 20px;
+  padding: 0;
+  font-size: 25px;
+  line-height: 30px;
+
+
+}
+.rating-box:before{
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+.rating-box .rating {
+  position: absolute;
+  left:0;
+  top:0;
+  white-space:nowrap;
+  overflow:hidden;
+  color: #F68127;
+}
+.rating-box .rating:before {
+  content: "\f005 \f005 \f005 \f005 \f005";
 }
