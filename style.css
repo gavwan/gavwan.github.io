@@ -336,7 +336,7 @@ body{
   font: 'Fira Sans', sans-serif;
 }
 
-#searchUL li:hover, #search a:hover{
+#searchUL li:hover{
   background-color: #a2a2a2;
 }
 
