@@ -107,7 +107,7 @@ body{
 }
 
 /*Active page shows a colour change*/
-.menu a.active{
+.menu a.active, .search-container button.active{
   background-color: #878787;
   color: white;
   text-decoration: underline;
@@ -115,18 +115,6 @@ body{
 
 .search-container {
   float: right;
-}
-
-.search-container input[type=text] {
-  display: none;
-  min-width: 250px;
-  line-height: 40px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  margin-top: 7.5px;
-  padding: 0 0 0 10px;
-  font-size: 1.0em;
-  color: #a9a9a9;
-  background-color: #ffffff;
 }
 
 .search-container button {
@@ -144,7 +132,7 @@ body{
 }
 
 #burger-menu-label{
-    color:white;
+    color: white;
     margin: 0 30px 0 0;
     font-size: 26px;
     line-height: 60px;
@@ -302,6 +290,73 @@ body{
   clear: both;
 }
 
+#searchinformation ul{
+  padding: 0;
+  margin: 0;
+  color: #000000;
+  list-style-type: none;
+}
+
+#searchinformation li {
+  background-color: #ffffff;
+  text-align: left;
+  margin: 0;
+  display: block;
+  -moz-box-shadow: 0px 3px 5px #888;
+   -webkit-box-shadow: 0px 3px 5px #888;
+   box-shadow: 0px 3px 5px #888;
+}
+
+#searchinformation li + li {
+  margin-top: 20px;
+}
+
+#searchinformation li {
+  background-color: #ffffff;
+}
+
+#search-subheader {
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  line-height: 2.0em;
+  background: rgb(0,0,0,0);
+  color: #000000;
+  text-decoration: none;
+  display: block;
+}
+
+#search-title {
+  color: #000000;
+  font-size: 2.0em;
+  line-height: 2.0em;
+  padding-left: 20px;
+  display: block;
+  text-decoration: underline;
+  font: 'Fira Sans', sans-serif;
+}
+
+#searchUL li:hover, #search a:hover{
+  background-color: #a2a2a2;
+}
+
+.search-bar input[type=text] {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width:100%;
+  max-width:600px;
+  padding-left: 10px;
+  line-height: 35px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin-bottom: 20px;
+  font-size: 1.7em;
+}
+
+#post-00004 {
+  display: none;
+}
+
 /* All the relevant info for the footer */
 .master-footer {
   width:100%;
@@ -390,23 +445,13 @@ body{
     margin: 0;
     width:100%;
     padding-left: 15px;
+    background: rgb(0,0,0,0.9);
   }
 
   .search-container button {
-    display: flex;
-    border: 0.5px solid #EAEAEB;
-    margin: 0;
-    width:100%;
+    background: rgb(0,0,0,0.9);
   }
 
-  .search-container input[type=text] {
-    display: none;
-    border: 0.5px solid #EAEAEB;
-    margin: 0;
-    width:100%;
-    line-height: 60px;
-    padding-left: 15px;
-  }
 
   iframe{
     width:400px;
@@ -427,14 +472,19 @@ body{
   }
 
   /* .nav input[type=text], */
-  .nav .search-container button {
+  .search-container button {
     display: block;
     text-align: left;
     width: 100%;
     margin: 0;
+    border: 0.5px solid #EAEAEB;
   }
-  .nav input[type=text] {
-    border: 1px solid #ccc;
+
+  #search-title {
+    font-size: 1.6em;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    line-height: 1.7em;
   }
 
 }

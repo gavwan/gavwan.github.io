@@ -42,42 +42,46 @@
         <label for="toggle" id="burger-menu-label">&#9776;</label>
         <input type="checkbox" id="toggle"/>
         <div class="menu">
-          <a href="index.html" class= "active">Home</a>
+          <a href="index.html">Home</a>
 					<a href="reviews.html">Reviews</a>
 		      <a href="howto.html">How to</a>
-					<a href="apps.html">Apps</a>
-					<a href="about.html">About</a>
-					<a href="contactus.html">Contact Us</a>
+		      <a href="about.html">About</a>
+          <a href="contactus.html">Contact Us</a>
 					<div class="search-container">
 						<form action="search.html" class="active">
 							<button id="search" type="submit"><i class="fa fa-search"></i></button>
 						</form>
-				  </div>
-		    </div>
-    	</div>
-		</div>
+					</div>
+    		</div>
+			</div>
 		<div class="content">
-      <div class="page-info" id="indexinformation2">
-		     <h2>Home</h2>
-		     <p>
-					 Welcome to Tech Finder UK! Here you can find budget/student friendly products at a lower price but offers similar functionality to more expensive products. We will run through the usability of each product as either as a every day carry or something suitable for your tech!
-					 We will have how to’s and reviews so stay tuned!
-					</p>
-				 <h2>Latest Reviews</h2>
-				 <article class="articles" id="post-00003">
-           <h3><a href="reviews/post-00003/post-00003.html">Nonda USB-C to USB-A Adapter Review</a></h3>
-           <div class="image-box">
-             <a href="reviews/post-00003/post-00003.html">
-               <img src="images/post-00003.jpg" alt="Nonda USB-C Dongle">
-             </a>
-           </div>
-           <p>As more and more devices only USB-C ports nowadays, for using USB-A accessories must be difficult right? Wrong! We picked up this 2 pack of USB-A to USB-C adapter from an unknown brand off Amazon, nonda. Here's our thoughts on this product! <a href="reviews/post-00003/post-00003.html" class="extend-article">[...]</a></p>
-           <br>
-           <!-- <p>Tags: #tech #finder #techfinder #gadgets #apple #microsoft #google #mini #edc #dongle #adapter #mobile #review #cases #chargers #cable #usbc </p> -->
-         </article>
-		  </div>
+      <div class="page-info" id="searchinformation">
+				<h2>Search</h2>
+				<div class="search-bar">
+					<input type="text" id="myInput" placeholder= "Search articles.." onkeyup="searcharticles()">
+				</div>
+				<ul id="searchUL">
+					<li>
+						<a id="search-title" href="reviews/post-00004/post-00004.html">SanDisk Ultra Dual Drive USB Type-C Review</a>
+						<a id="search-subheader"href="reviews/post-00004/post-00004.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget leo dictum, ultrices augue sit amet, molestie nulla. Nam vel arcu facilisis, consequat metus in, ultrices odio. Vivamus sollicitudin enim ut mollis auctor.</a>
+					</li>
+					<li>
+						<a id="search-title" href="reviews/post-00003/post-00003.html">Nonda USB-C Dongle Review</a>
+						<a id="search-subheader"href="reviews/post-00003/post-00003.html">As more and more devices only USB-C ports nowadays, for using USB-A accessories must be difficult right? Wrong! We picked up this 2 pack of USB-A to USB-C adapter from an unknown brand off Amazon, nonda. Here's our thoughts on this product!</a>
+					</li>
+					<li>
+						<a id="search-title" href="reviews/post-00002/post-00002.html">Blaupunkt Screen Cleaning Spray Review</a>
+						<a id="search-subheader"href="reviews/post-00002/post-00002.html">With the new anti-glare and fragile screens nowadays, what do you need to take care of your expensive devices such as tablets and laptops? Check out our find at B&M for this cheap screen cleaner! The spray comes with 2 microfiber cloths, however, does this work?</a>
+					</li>
+					<li>
+						<a id="search-title" href="reviews/post-00001/post-00001.html"> Apple MacBook 13" 2020 Review</a>
+						<a id="search-subheader"href="reviews/post-00001/post-00001.html">Are you looking for a brand new MacBook in 2020 before the academic year? Should you pick up the MacBook Air or MacBook Pro? Here’s our review on the MacBook Pro 13” 2020, 10th Generation Intel i5 with 512GB SSD.</a>
+					</li>
+				</ul>
+			</div>
     </div>
 	</div>
+
 	<footer class="master-footer">
 		<div class="main-footer">
 			<div class="left-footer">
@@ -95,8 +99,7 @@
 		</div>
 	</footer>
 
-	<script src="js/jquery-3.5.1.min.js"></script>
-	<script src="js/search.js"></script>
+	<script src="js/search(test).js"></script>
 
 </body>
 </html>
