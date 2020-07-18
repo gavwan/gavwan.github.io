@@ -203,6 +203,42 @@ body{
   padding-right: 20px;
 }
 
+#reviewinformation p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+#reviewinformation article + article {
+  margin-top: 20px;
+}
+
+.article-info {
+  margin-bottom: 10px;
+}
+
+#article-info {
+  margin-bottom: 0;
+}
+
+.rating-text {
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  width: 80px;
+}
+
+.publish-date {
+  float: right;
+  font-size: 15px;
+  border: 0.5px solid #a9a9a9;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#publish-date-search {
+  height: 30px;
+}
+
 .articles::after {
   content: "";
   clear: both;
@@ -216,15 +252,6 @@ body{
 .articles a:hover{
   text-decoration: underline;
   color: #0000ff;
-}
-
-#reviewinformation p {
-  padding: 0 20px;
-  margin: 0;
-}
-
-#reviewinformation article + article {
-  margin-top: 20px;
 }
 
 .image-box {
@@ -453,8 +480,8 @@ hr {
   #burger-menu-label {
       display: block;
       cursor: pointer;
-
   }
+
   .menu {
     position: relative;
     text-align: left;
@@ -464,6 +491,7 @@ hr {
     float: right;
     opacity: 1;
     visibility: visible;
+    z-index: 2;
   }
 
   .menu a {
@@ -512,6 +540,10 @@ hr {
 
   #searchUL{
     padding-left: 10px;
+  }
+
+  .articles p {
+    padding-bottom: 100px;
   }
 
 }
@@ -587,7 +619,7 @@ hr {
 }
 
 .rating-box {
-  position:relative;
+  position: relative;
   vertical-align: middle;
   font-size: 3em;
   font-family: FontAwesome;
@@ -596,12 +628,15 @@ hr {
   padding: 0;
   font-size: 25px;
   line-height: 30px;
+  z-index:1;
 }
+
 .rating-box:before{
   content: "\f006 \f006 \f006 \f006 \f006";
 }
 .rating-box .rating {
   position: absolute;
+  display: inline-block;
   left:0;
   top:0;
   white-space:nowrap;
@@ -610,31 +645,4 @@ hr {
 }
 .rating-box .rating:before {
   content: "\f005 \f005 \f005 \f005 \f005";
-}
-
-.article-info {
-  margin-bottom: 10px;
-}
-
-#article-info {
-  margin-bottom: 0;
-}
-
-.rating-text {
-  float: left;
-  font-size: 15px;
-  font-weight: bold;
-  width: 80px;
-}
-
-.publish-date {
-  float: right;
-  font-size: 15px;
-  border: 0.5px solid #a9a9a9;
-  margin-right: 10px;
-  font-weight: bold;
-}
-
-#publish-date-search {
-  height: 30px;
 }
