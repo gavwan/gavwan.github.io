@@ -345,10 +345,7 @@ body{
 }
 
 .search-bar input[type=text] {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  width:100%;
+  width: 100%;
   max-width:600px;
   padding-left: 10px;
   line-height: 35px;
@@ -358,6 +355,31 @@ body{
 
 #post-00005 {
   display: none;
+}
+
+/* for the countdown pages */
+.middle {
+  width:100%;
+  max-width: 600px;
+  text-align: center;
+  font-size: 25px;
+  background: rgb(0,0,0,0.5);
+  margin: 60px auto;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.middle p {
+  background: rgb(0,0,0,0);
+  margin: 0;
+}
+
+.middle h1{
+  color: #ffffff;
+  font-size: 3.5em;
+}
+
+hr {
+  width: 75%;
 }
 
 /* All the relevant info for the footer */
@@ -450,11 +472,6 @@ body{
     padding-left: 15px;
     background: rgb(0,0,0,0.9);
   }
-
-  .search-container button {
-    background: rgb(0,0,0,0.9);
-  }
-
 
   iframe{
     width:400px;
