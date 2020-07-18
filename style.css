@@ -231,7 +231,7 @@ body{
   width: 250px;
   height: 250px;
   overflow: hidden;
-  margin: 10px 10px;
+  margin: 0 10px 10px 10px;
   float: right;
 }
 
@@ -531,10 +531,10 @@ hr {
   }
 
   .image-box {
-    display:block;
-    float:none;
+    display: block;
+    float: none;
     text-align: center;
-    margin: 0 auto 0 auto;
+    margin: 10px auto;
     width: 300px;
     height: 300px;
   }
@@ -585,9 +585,7 @@ hr {
   background: #bb0000;
   color: white;
 }
-.checked {
-  color: orange;
-}
+
 .rating-box {
   position:relative;
   vertical-align: middle;
@@ -595,12 +593,9 @@ hr {
   font-family: FontAwesome;
   display: inline-block;
   color: #a2a2a2;
-  margin-left: 20px;
   padding: 0;
   font-size: 25px;
   line-height: 30px;
-
-
 }
 .rating-box:before{
   content: "\f006 \f006 \f006 \f006 \f006";
@@ -615,4 +610,31 @@ hr {
 }
 .rating-box .rating:before {
   content: "\f005 \f005 \f005 \f005 \f005";
+}
+
+.article-info {
+  margin-bottom: 10px;
+}
+
+#article-info {
+  margin-bottom: 0;
+}
+
+.rating-text {
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  width: 80px;
+}
+
+.publish-date {
+  float: right;
+  font-size: 15px;
+  border: 0.5px solid #a9a9a9;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#publish-date-search {
+  height: 30px;
 }
