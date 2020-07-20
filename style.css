@@ -162,7 +162,7 @@ body{
   padding: 75px;
   letter-spacing: 0.5px;
   text-align: left;
-  height: auto;
+  height: 400px;
 }
 
 .homepage-info1 h3, .homepage-info2 h3 {
@@ -584,15 +584,16 @@ hr {
 
   .homepage-info1, .homepage-info2 {
     text-align: center;
+    height:auto;
   }
 
   .homepage-info1 h3, .homepage-info2 h3 {
-    margin: 0;
+    margin-bottom: 0px;
     text-align: center;
   }
 
   .homepage-info1 p, .homepage-info2 p {
-    padding: 40px 0 50px 0;
+    padding: 25px 0 50px 0;
     margin: auto;
   }
 
