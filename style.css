@@ -158,22 +158,21 @@ body{
 .homepage-info1, .homepage-info2 {
   background: #262626;
   color: #ffffff;
-  margin:0 auto ;
-  padding: 200px 50px;
+  margin:0 auto;
+  padding: 75px;
   letter-spacing: 0.5px;
   text-align: left;
+  height: 400px;
 }
 
 .homepage-info1 h3, .homepage-info2 h3 {
   color: #ffffff;
+  margin-top: 35px;
   font: 'Fira Sans', sans-serif;
-  text-decoration: none;
-  margin-bottom: 20px;
 }
 
 .homepage-info1 p, .homepage-info2 p{
   font-size: 1.3em;
-  margin: 0px 500px 0px 0px;
   line-height: 30px;
 }
 
@@ -181,7 +180,18 @@ body{
   background: #add8e6;
 }
 
+#leftbox {
+  float:left;
+  width:50%;
+}
+#rightbox{
+  float:right;
+  width:50%;
+}
 
+.homepage-info1 img, .homepage-info2 img{
+  float: right;
+}
 
 .page-info {
   width: 95%;
@@ -489,7 +499,7 @@ hr {
   margin-left: 15px;
 }
 /* creating a responsive website */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 770px) {
   #header {
     text-align: center;
   }
@@ -538,11 +548,6 @@ hr {
     background: rgb(0,0,0,0.9);
   }
 
-  iframe{
-    width:400px;
-    height:250px;
-  }
-
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
@@ -566,8 +571,6 @@ hr {
     border: 0.5px solid #EAEAEB;
   }
 
-
-
   #searchUL h3 {
     font-size: 1.6em;
     padding-top: 7px;
@@ -578,6 +581,30 @@ hr {
   #searchUL{
     padding-left: 10px;
   }
+
+  .homepage-info1, .homepage-info2 {
+    text-align: center;
+  }
+
+  .homepage-info1 h3, .homepage-info2 h3 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .homepage-info1 p, .homepage-info2 p{
+    margin: 0;
+  }
+
+  #leftbox {
+    float: none;
+
+    min-width: 100%;
+  }
+
+  #rightbox{
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -676,4 +703,27 @@ hr {
 }
 .rating-box .rating:before {
   content: "\f005 \f005 \f005 \f005 \f005";
+}
+
+.star {
+  visibility: hidden;
+}
+
+.fadeIn {
+  -webkit-animation: animat_show 2s;
+  animation: animat_show 2s;
+  visibility: visible !important;
+}
+
+.fadeIn-image {
+  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation: animat_show 3s;
+  animation-delay: 2s;
+  animation: animat_show 3s;
+  visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+  0%{opacity:0}
+  100%{opacity:1}
 }
