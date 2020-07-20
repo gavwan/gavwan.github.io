@@ -180,7 +180,6 @@ body{
   line-height: 2.0em;
   background: rgba(0, 0, 0, 0);
   color: #000000;
-
 }
 
 .reviewarticles img {
@@ -206,10 +205,6 @@ body{
 #reviewinformation p {
   padding: 0 20px;
   margin: 0;
-}
-
-#reviewinformation article + article {
-  margin-top: 20px;
 }
 
 .article-info {
@@ -239,6 +234,19 @@ body{
   height: 30px;
 }
 
+.article-text {
+  margin-bottom: 10px;
+}
+
+.articles {
+  margin-top: 20px;
+}
+
+.articles, #searchUL li{
+  border-radius: 15px;
+  border: 2px solid #add8e6;
+}
+
 .articles::after {
   content: "";
   clear: both;
@@ -258,7 +266,7 @@ body{
   width: 250px;
   height: 250px;
   overflow: hidden;
-  margin: 0 10px 10px 10px;
+  margin: 0 15px 15px 10px;
   float: right;
 }
 
@@ -344,7 +352,6 @@ body{
 
 #search-link {
   text-decoration: none;
-
 }
 
 #searchUL p {
@@ -530,6 +537,8 @@ hr {
     background: rgb(0,0,0,0.9);
     border: 0.5px solid #EAEAEB;
   }
+
+
 
   #searchUL h3 {
     font-size: 1.6em;
