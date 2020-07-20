@@ -155,6 +155,34 @@ body{
   background-position: top;
 }
 
+.homepage-info1, .homepage-info2 {
+  background: #262626;
+  color: #ffffff;
+  margin:0 auto ;
+  padding: 200px 50px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.homepage-info1 h3, .homepage-info2 h3 {
+  color: #ffffff;
+  font: 'Fira Sans', sans-serif;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.homepage-info1 p, .homepage-info2 p{
+  font-size: 1.3em;
+  margin: 0px 500px 0px 0px;
+  line-height: 30px;
+}
+
+.homepage-info2 {
+  background: #add8e6;
+}
+
+
+
 .page-info {
   width: 95%;
   margin:0 auto ;
@@ -189,7 +217,7 @@ body{
   padding: 10px 10px 0 10px;
 }
 
-#reviewinformation article, #reviewinformation p, #indexinformation2 article, #indexinformation2 p {
+#reviewinformation article, #reviewinformation p, #indexinformation2 article {
   background-color: #ffffff;
   color: #000000;
   text-align: left;
