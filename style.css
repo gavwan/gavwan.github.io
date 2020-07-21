@@ -267,8 +267,10 @@ body{
   margin: 0;
   padding: 0;
   text-align: center;
-  text-decoration: none;
   font-weight: bold;
+}
+.homepage-info4 h2{
+  text-decoration: none;
 }
 
 .homepage-info3 p {
@@ -331,7 +333,6 @@ body{
   font-family: League-Gothic;
   font-size: 3.0em;
 }
-
 
 .page-info {
   width: 95%;
