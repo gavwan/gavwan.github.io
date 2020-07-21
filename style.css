@@ -165,13 +165,13 @@ body{
   color: #ffffff;
   margin:0 auto;
   padding: 75px;
-  letter-spacing: 0.5px;
   text-align: left;
   height: 400px;
 }
 
 .homepage-info1 p, .homepage-info2 p{
   font-size: 1.3em;
+  letter-spacing: 0.5px;
   line-height: 30px;
 }
 
