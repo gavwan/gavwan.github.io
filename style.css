@@ -188,7 +188,7 @@ body{
   width:50%;
 }
 
-.homepage-info1 img, .homepage-info2 img{
+.homepage-info1 #rightbox img {
   float: right;
 }
 
@@ -294,7 +294,7 @@ body{
   height: 420px;
 }
 
-.imgBx{
+.icon-link{
   position: relative;
   width: 250px;
   height: 250px;
@@ -304,7 +304,7 @@ body{
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.imgBx img {
+.icon-link img {
   max-width: 100%;
   border-radius: 4px;
 }
@@ -754,13 +754,21 @@ hr {
     margin: 50px 25px;
   }
 
-  #leftbox {
+  .homepage-info1 #leftbox {
     float: none;
-
     min-width: 100%;
   }
 
-  #rightbox{
+  .homepage-info1 #rightbox{
+    display: none;
+  }
+
+  .homepage-info2 #rightbox {
+    float: none;
+    min-width: 100%;
+  }
+
+  .homepage-info2 #leftbox{
     display: none;
   }
 
