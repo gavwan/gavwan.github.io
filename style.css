@@ -165,6 +165,79 @@ body{
   height: 400px;
 }
 
+.homepage-info3 {
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  position: relative;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 40px;
+}
+
+
+.homepage-info3 h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.homepage-info3 p {
+  line-height: 1.4em;
+}
+
+.card {
+  position: relative;
+  max-width: 270px;
+  height: 250px;
+  background: #ffffff;
+  margin: 60px 10px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  height: 420px;
+}
+
+.imgBx{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  top: -60px;
+  right: 10px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.imgBx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.card-info {
+  position: relative;
+  padding: 5px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover .card-info {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
 .homepage-info1 h3, .homepage-info2 h3 {
   color: #ffffff;
   margin-top: 35px;
@@ -499,6 +572,14 @@ hr {
   margin-left: 15px;
 }
 /* creating a responsive website */
+@media only screen and (max-width: 880px) {
+  .homepage-info3 {
+    height: auto;
+  }
+  .card{
+    margin: 50px 35px;
+  }
+}
 @media only screen and (max-width: 770px) {
   #header {
     text-align: center;
@@ -595,6 +676,14 @@ hr {
   .homepage-info1 p, .homepage-info2 p {
     padding: 25px 0 50px 0;
     margin: auto;
+  }
+
+  .homepage-info3 {
+    height: auto;
+  }
+
+  .card{
+    margin: 50px 25px;
   }
 
   #leftbox {
