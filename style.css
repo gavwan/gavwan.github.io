@@ -4,6 +4,11 @@ p{ line-height: 1em; }
   box-sizing: border-box;
 }
 
+@font-face
+{
+    font-family: "League-Gothic";
+    src: url('fonts/LeagueGothic-Regular.otf');
+}
 
 iframe{
   width:600px;
@@ -19,10 +24,10 @@ h1, h2, h3, h4{
 }
 
 h2{
-  font-size: 3.0em;
+  font-size: 4.0em;
   text-decoration: underline;
   color: #ffffff;
-  font: 'Fira Sans', sans-serif;
+  font-family: League-Gothic;
 }
 
 h3{
@@ -31,7 +36,7 @@ h3{
   text-align: left;
   padding: 20px 20px 0 20px;
   text-decoration: underline;
-  font: 'Fira Sans', sans-serif;
+  font: '', sans-serif;
 }
 
 h4{
@@ -165,10 +170,33 @@ body{
   height: 400px;
 }
 
+.homepage-info1 p, .homepage-info2 p{
+  font-size: 1.3em;
+  line-height: 30px;
+}
+
+.homepage-info2 {
+  background: #add8e6;
+}
+
+#leftbox {
+  float:left;
+  width:50%;
+}
+#rightbox{
+  float:right;
+  width:50%;
+}
+
+.homepage-info1 img, .homepage-info2 img{
+  float: right;
+}
+
 .homepage-info3 {
   margin: 0;
   padding: 0;
   height: 500px;
+  font-family: 'Poppins', sans-serif;
   position: relative;
   width: auto;
   display: flex;
@@ -178,11 +206,68 @@ body{
   margin-top: 40px;
 }
 
+.homepage-info4 {
+  background: #333366;
+  color: #ffffff;
+  margin:0;
+  padding: 75px;
+  height: auto;
+}
+
+.index-photo-row1, .index-photo-row2 {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.index-photo-row1,
+.index-photo-row1 > .index-photo-column {
+  padding: 8px;
+}
+
+.index-photo-row2,
+.index-photo-row2 > .index-photo-column {
+  padding: 0px 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.index-photo-column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.index-photo-row1:after, .index-photo-row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.latest-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.index-image-box {
+  background: #ffffff;
+}
+
+.index-image-box img {
+  margin-bottom: -5px;
+}
+
+.index-image-box:hover img {
+  opacity: 0.3;
+}
 
 .homepage-info3 h3 {
   margin: 0;
   padding: 0;
   text-align: center;
+  font-weight: bold;
 }
 
 .homepage-info3 p {
@@ -241,30 +326,11 @@ body{
 .homepage-info1 h3, .homepage-info2 h3 {
   color: #ffffff;
   margin-top: 35px;
-  font: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  font-family: League-Gothic;
+  font-size: 3.0em;
 }
 
-.homepage-info1 p, .homepage-info2 p{
-  font-size: 1.3em;
-  line-height: 30px;
-}
-
-.homepage-info2 {
-  background: #add8e6;
-}
-
-#leftbox {
-  float:left;
-  width:50%;
-}
-#rightbox{
-  float:right;
-  width:50%;
-}
-
-.homepage-info1 img, .homepage-info2 img{
-  float: right;
-}
 
 .page-info {
   width: 95%;
@@ -696,12 +762,20 @@ hr {
     display: none;
   }
 
-}
+  .index-photo-column {
+   width: 50%;
+ }
 
+}
 @media only screen and (max-width: 600px) {
   .responsive {
     width: 100%;
   }
+
+  .index-photo-column {
+   width: 100%;
+ }
+
   .contactcolumn, input[type=submit] {
     width: 100%;
     margin-top: 0;
@@ -727,7 +801,6 @@ hr {
     margin: 0 auto 0 auto;
     width: 300px;
     height: 300px;
-
   }
 }
 
