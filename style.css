@@ -169,27 +169,8 @@ body{
   height: 400px;
 }
 
-.homepage-info1 p, .homepage-info2 p{
-  font-size: 1.3em;
-  letter-spacing: 0.5px;
-  line-height: 30px;
-}
-
 .homepage-info2 {
   background: #add8e6;
-}
-
-#leftbox {
-  float:left;
-  width:50%;
-}
-#rightbox{
-  float:right;
-  width:50%;
-}
-
-.homepage-info1 #rightbox img {
-  float: right;
 }
 
 .homepage-info3 {
@@ -214,53 +195,12 @@ body{
   height: auto;
 }
 
-.index-photo-row1, .index-photo-row2 {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column (if you want) */
-.index-photo-row1,
-.index-photo-row1 > .index-photo-column {
-  padding: 8px;
-}
-
-.index-photo-row2,
-.index-photo-row2 > .index-photo-column {
-  padding: 0px 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.index-photo-column {
-  float: left;
-  width: 25%;
-}
-
-/* Clear floats after rows */
-.index-photo-row1:after, .index-photo-row2:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.latest-image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.index-image-box {
-  background: #ffffff;
-}
-
-.index-image-box img {
-  margin-bottom: -5px;
-}
-
-.index-image-box:hover img {
-  opacity: 0.3;
+.homepage-info1 h3, .homepage-info2 h3 {
+  color: #ffffff;
+  margin-top: 35px;
+  font-weight: bold;
+  font-family: League-Gothic;
+  font-size: 3.0em;
 }
 
 .homepage-info3 h3 {
@@ -277,6 +217,26 @@ body{
   line-height: 1.4em;
 }
 
+.homepage-info1 p, .homepage-info2 p{
+  font-size: 1.3em;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+
+#leftbox {
+  float:left;
+  width:50%;
+}
+#rightbox{
+  float:right;
+  width:50%;
+}
+
+.homepage-info1 #rightbox img {
+  float: right;
+}
+
+/* <--- actions associated with homepage-info3 ---> */
 .card {
   position: relative;
   max-width: 270px;
@@ -325,14 +285,58 @@ body{
   margin-top: -40px;
   transition-delay: 0.3s;
 }
+/* <--- end ---> */
 
-.homepage-info1 h3, .homepage-info2 h3 {
-  color: #ffffff;
-  margin-top: 35px;
-  font-weight: bold;
-  font-family: League-Gothic;
-  font-size: 3.0em;
+/* <--- actions associated with homepage-info4 ---> */
+.index-photo-row1, .index-photo-row2 {
+  margin: 8px -16px;
 }
+
+/* Add padding BETWEEN each column (if you want) */
+.index-photo-row1,
+.index-photo-row1 > .index-photo-column {
+  padding: 8px;
+}
+.index-photo-row2,
+.index-photo-row2 > .index-photo-column {
+  padding: 0px 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.index-photo-column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.index-photo-row1:after, .index-photo-row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Latest image from blogs with links*/
+.latest-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.index-image-box {
+  background: #ffffff;
+}
+
+.index-image-box img {
+  margin-bottom: -5px;
+}
+
+.index-image-box:hover img {
+  opacity: 0.3;
+}
+/* <--- end ---> */
 
 .page-info {
   width: 95%;
@@ -564,6 +568,7 @@ body{
   line-height: 35px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 1.7em;
+  border-radius: 25px;
 }
 
 #post-00005 {
