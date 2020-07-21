@@ -766,6 +766,15 @@ hr {
    width: 50%;
  }
 
+ .index-photo-row1,
+ .index-photo-row1 > .index-photo-column {
+   padding: 12px 8px;
+ }
+
+ .index-photo-row2 {
+   display: none;
+ }
+
 }
 @media only screen and (max-width: 600px) {
   .responsive {
