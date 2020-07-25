@@ -24,7 +24,7 @@ h1, h2, h3, h4{
 }
 
 h2{
-  font-size: 4.0em;
+  font-size: 4.3em;
   text-decoration: underline;
   color: #ffffff;
   font-family: League-Gothic;
@@ -339,9 +339,8 @@ body{
 /* <--- end ---> */
 
 .page-info {
-  width: 95%;
+
   margin:0 auto ;
-  background: rgba(0, 0, 0, 0.6);
   padding: 20px;
   text-align: center;
 }
