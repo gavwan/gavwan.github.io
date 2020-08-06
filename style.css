@@ -373,14 +373,14 @@ body{
   color: #ffffff;
 }
 
-.reviewarticles {
+.reviewarticles, .howtoarticles {
   background-color: #ffffff;
   text-align: left;
   border-radius: 15px;
   border: 2px solid #add8e6;
 }
 
-.reviewarticles p {
+.reviewarticles p, .howtoarticles p {
   padding: 0 20px 0 20px;
   line-height: 2.0em;
   background: rgba(0, 0, 0, 0);
@@ -394,7 +394,16 @@ body{
   padding: 10px 10px 0 10px;
 }
 
-#reviewinformation article, #reviewinformation p{
+.howtoarticles img {
+  height: 300px;
+  padding: 5px 20px;
+}
+
+.short-img {
+  display: none;
+}
+
+#reviewinformation article, #reviewinformation p, #howtoinformation article, #howtoinformation p{
   background-color: #ffffff;
   color: #000000;
   text-align: left;
@@ -419,13 +428,15 @@ body{
   margin: 0;
 }
 
-#reviewinformation p {
+#reviewinformation p, #howtoinformation p {
   padding: 0 20px;
   margin: 0;
 }
 
 .article-info {
   margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 #article-info {
@@ -434,17 +445,24 @@ body{
 
 .rating-text {
   float: left;
-  font-size: 15px;
-  font-weight: bold;
   width: 80px;
 }
 
 .publish-date {
   float: right;
-  font-size: 15px;
   border: 0.5px solid #a9a9a9;
-  margin-right: 10px;
-  font-weight: bold;
+  margin-right: 20px;
+}
+
+.author {
+  display: inline-block;
+  color: #a2a2a2;
+  text-align: left;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  z-index:1;
+  color: #000000;
 }
 
 #publish-date-search {
@@ -908,6 +926,14 @@ hr {
    top: 45%;
  }
 
+ .long-img {
+   display: none;
+ }
+
+ .short-img {
+   display: block;
+ }
+
 }
 @media only screen and (max-width: 600px) {
   .responsive {
@@ -944,9 +970,20 @@ hr {
     width: 300px;
     height: 300px;
   }
+
+  .howtoarticles img {
+    display: block;
+    float: none;
+    text-align: center;
+    margin: 0 auto 0 auto;
+  }
+
+  .image-resize .long-img{
+    display: none;
+  }
 }
 
-/* Style all font awesome icons */
+/* Style all font social media icons */
 .fa {
   padding: 10px;
   font-size: 25px;
@@ -985,7 +1022,6 @@ hr {
 .rating-box {
   position: relative;
   vertical-align: middle;
-  font-size: 3em;
   font-family: FontAwesome;
   display: inline-block;
   color: #a2a2a2;
