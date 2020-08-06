@@ -976,12 +976,16 @@ hr {
     float: none;
     text-align: center;
     height: auto;
-    width: 450px;
+    width: 300px;
     margin: 0 auto 0 auto;
   }
 
   .image-resize .long-img{
     display: none;
+  }
+
+  .short-img{
+    display: block;
   }
 }
 
