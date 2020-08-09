@@ -1076,12 +1076,37 @@ hr {
     margin: 0 auto 0 auto;
   }
 
+  .long-img {
+    display: none;
+  }
+
+  .short-img {
+    display: block;
+  }
+
+
   .price-text {
     left: 300px;
   }
 
   .cost {
     left: 350px;
+  }
+
+  .app-info .price-text {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    bottom: 40px;
+    padding-left: 20px;
+  }
+
+  .app-info .cost {
+    position: absolute;
+    width: 100px;
+    left: 70px;
+    bottom: 40px;
+    color: orange;
   }
 }
 
