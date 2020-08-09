@@ -185,6 +185,14 @@ body{
 }
 
 .homepage-info3 {
+  background: #f85a5a;
+  color: #000000;
+  margin:0;
+  padding: 75px;
+  height: auto;
+}
+
+.homepage-info4 {
   margin: 0;
   padding: 0;
   height: 500px;
@@ -198,7 +206,7 @@ body{
   margin-top: 40px;
 }
 
-.homepage-info4 {
+.homepage-info5 {
   background: #333366;
   color: #ffffff;
   margin:0;
@@ -214,19 +222,15 @@ body{
   font-size: 3.0em;
 }
 
-.homepage-info3 h3 {
+.homepage-info4 h3 {
   margin: 0;
   padding: 0;
   text-align: center;
   font-weight: bold;
 }
 
-.homepage-info4 h2{
+.homepage-info3 h1, .homepage-info5 h1{
   text-decoration: none;
-}
-
-.homepage-info3 p {
-  line-height: 1.4em;
 }
 
 .homepage-info1 p, .homepage-info2 p{
@@ -237,6 +241,16 @@ body{
 
 .homepage-info1 p {
   margin-right: 40px;
+}
+
+.homepage-info3 p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.homepage-info4 p {
+  line-height: 1.4em;
 }
 
 
@@ -258,7 +272,7 @@ body{
 }
 
 
-/* <--- actions associated with homepage-info3 ---> */
+/* <--- actions associated with homepage-info4 ---> */
 .card {
   position: relative;
   max-width: 270px;
@@ -309,7 +323,29 @@ body{
 }
 /* <--- end ---> */
 
-/* <--- actions associated with homepage-info4 ---> */
+/* <--- actions associated with homepage-info3 ---> */
+.three-photo-row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.three-photo-row,
+.three-photo-row > .three-photo-column {
+  padding: 8px;
+}
+/* Create four equal columns that floats next to each other */
+.three-photo-column {
+  float: left;
+  width: 33.3%;
+}
+
+/* Clear floats after rows */
+.three-photo-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* <--- actions associated with homepage-info5 ---> */
 .index-photo-row1, .index-photo-row2 {
   margin: 8px -16px;
 }
@@ -403,7 +439,7 @@ body{
   display: none;
 }
 
-#reviewinformation article, #reviewinformation p, #howtoinformation article, #howtoinformation p{
+#reviewinformation article, #reviewinformation p, #howtoinformation article, #howtoinformation p, #appsinformation article, #appsinformation p{
   background-color: #ffffff;
   color: #000000;
   text-align: left;
@@ -428,7 +464,7 @@ body{
   margin: 0;
 }
 
-#reviewinformation p, #howtoinformation p {
+#reviewinformation p, #howtoinformation p, #appsinformation p{
   padding: 0 20px;
   margin: 0;
 }
@@ -464,6 +500,47 @@ body{
   z-index:1;
   color: #000000;
 }
+
+.app-info {
+  position: relative;
+  height: 100px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.available-text {
+  padding-left: 20px;
+}
+
+.app-info .available-text {
+  position: absolute;
+  width: 140px;
+  bottom: 10px;
+}
+
+.app-info .app-availability {
+  position: absolute;
+  width: 150px;
+  left: 120px;
+  bottom: 10px;
+  color: #838383
+}
+
+.price-text {
+  position: absolute;
+  width: 140px;
+  bottom: 10px;
+  left: 400px;
+}
+
+.cost {
+  position: absolute;
+  width: 140px;
+  bottom: 10px;
+  left: 450px;
+  color: orange;
+}
+
 
 #publish-date-search {
   height: 30px;
@@ -681,7 +758,7 @@ body{
   line-height: 35px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 1.7em;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 #post-00005 {
@@ -702,6 +779,8 @@ body{
 .middle p {
   background: rgb(0,0,0,0);
   margin: 0;
+  color: #ffffff;
+  text-align: center;
 }
 
 .middle h1{
@@ -761,7 +840,7 @@ hr {
 }
 /* creating a responsive website */
 @media only screen and (max-width: 880px) {
-  .homepage-info3 {
+  .homepage-info4 {
     height: auto;
   }
   .card{
@@ -870,7 +949,7 @@ hr {
     margin: auto;
   }
 
-  .homepage-info3 {
+  .homepage-info4 {
     height: auto;
   }
 
@@ -895,6 +974,15 @@ hr {
   .homepage-info2 #leftbox{
     display: none;
   }
+
+  .three-photo-column {
+   width: 50%;
+ }
+
+ .three-photo-row1,
+ .three-photo-row1 > .three-photo-column {
+   padding: 12px 8px;
+ }
 
   .index-photo-column {
    width: 50%;
@@ -940,9 +1028,17 @@ hr {
     width: 100%;
   }
 
+  .three-photo-column {
+   width: 100%;
+ }
+
   .index-photo-column {
    width: 100%;
  }
+
+ .index-photo-column {
+  width: 100%;
+}
 
   .contactcolumn, input[type=submit] {
     width: 100%;
@@ -980,12 +1076,12 @@ hr {
     margin: 0 auto 0 auto;
   }
 
-  .image-resize .long-img{
-    display: none;
+  .price-text {
+    left: 300px;
   }
 
-  .short-img{
-    display: block;
+  .cost {
+    left: 350px;
   }
 }
 
