@@ -761,10 +761,6 @@ body{
   border-radius: 15px;
 }
 
-#post-00005 {
-  display: none;
-}
-
 /* for the countdown pages */
 .middle {
   width:100%;
@@ -1074,14 +1070,6 @@ hr {
     height: auto;
     width: 300px;
     margin: 0 auto 0 auto;
-  }
-
-  .long-img {
-    display: none;
-  }
-
-  .short-img {
-    display: block;
   }
 
 
