@@ -535,7 +535,7 @@ body{
 
 .cost {
   position: absolute;
-  width: 140px;
+  width: 200px;
   bottom: 10px;
   left: 450px;
   color: orange;
@@ -1091,7 +1091,6 @@ hr {
 
   .app-info .cost {
     position: absolute;
-    width: 100px;
     left: 70px;
     bottom: 40px;
     color: orange;
