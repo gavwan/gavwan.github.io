@@ -115,12 +115,12 @@ body{
 /*Hover over the nav bar to underline*/
 .menu a:hover{
   text-decoration: underline;
-  background-color: #bababa
+  background-color: #828282;
 }
 
 /*Active page shows a colour change*/
 .menu a.active, .search-container button.active{
-  background-color: #878787;
+  background-color: #696969;
   color: white;
   text-decoration: underline;
 }
@@ -413,7 +413,7 @@ body{
   background-color: #ffffff;
   text-align: left;
   border-radius: 15px;
-  border: 2px solid #add8e6;
+  border: 2px solid #949494;
 }
 
 .reviewarticles p, .howtoarticles p {
@@ -425,8 +425,8 @@ body{
 
 .reviewarticles img {
   float: right;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   padding: 10px 10px 0 10px;
 }
 
@@ -435,7 +435,11 @@ body{
   padding: 5px 20px;
 }
 
-.short-img {
+.mobile-img{
+  display:none;
+}
+
+#short-img, #mobile-img {
   display: none;
 }
 
@@ -556,7 +560,7 @@ body{
 
 .articles, #searchUL li{
   border-radius: 15px;
-  border: 2px solid #add8e6;
+  border: 2px solid #949494;
 }
 
 .articles::after {
@@ -597,7 +601,7 @@ body{
   padding: 20px 20px;
   margin: 30px;
   border-radius: 15px;
-  border: 2px solid #add8e6;
+  border: 2px solid #949494;
 }
 
 .faq-container {
@@ -676,7 +680,7 @@ body{
 }
 
 .contactrow label[for=name], [for=email], [for=subject], [for=message] {
-    color: #ffffff;
+    color: #000000;
     font-family: Verdana;
     font-size: 15px;
     float: left;
@@ -841,6 +845,23 @@ hr {
   }
   .card{
     margin: 50px 35px;
+  }
+
+  .reviewarticles img {
+    display: block;
+    float: none;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    width: 400px;
+    height: 400px;
+  }
+
+  #desktop-img {
+    display: none;
+  }
+
+  #mobile-img {
+    display: block;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -1010,11 +1031,11 @@ hr {
    top: 45%;
  }
 
- .long-img {
+ #long-img {
    display: none;
  }
 
- .short-img {
+ #short-img {
    display: block;
  }
 
