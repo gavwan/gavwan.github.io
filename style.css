@@ -350,6 +350,10 @@ body{
   margin: 8px -16px;
 }
 
+.index-photo-row3{
+  margin: 8px -16px;
+}
+
 /* Add padding BETWEEN each column (if you want) */
 .index-photo-row1,
 .index-photo-row1 > .index-photo-column {
@@ -357,6 +361,11 @@ body{
 }
 .index-photo-row2,
 .index-photo-row2 > .index-photo-column {
+  padding: 0px 8px 8px 8px;
+}
+
+.index-photo-row3,
+.index-photo-row3 > .index-photo-column {
   padding: 0px 8px;
 }
 
@@ -367,7 +376,7 @@ body{
 }
 
 /* Clear floats after rows */
-.index-photo-row1:after, .index-photo-row2:after {
+.index-photo-row1:after, .index-photo-row2:after, .index-photo-row3:after {
   content: "";
   display: table;
   clear: both;
