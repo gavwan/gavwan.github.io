@@ -1019,7 +1019,7 @@ hr {
    padding: 12px 8px;
  }
 
- .index-photo-row2 {
+ .index-photo-row2, .index-photo-row3 {
    display: none;
  }
 
