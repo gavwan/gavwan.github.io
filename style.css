@@ -482,6 +482,10 @@ body{
   margin: 0;
 }
 
+#reviewtext p {
+  margin-bottom: 1.5em;
+}
+
 .article-info {
   margin-bottom: 10px;
   font-size: 15px;
