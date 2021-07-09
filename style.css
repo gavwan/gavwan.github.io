@@ -354,6 +354,10 @@ body{
   margin: 8px -16px;
 }
 
+.index-photo-row4{
+  margin: 8px -16px
+}
+
 /* Add padding BETWEEN each column (if you want) */
 .index-photo-row1,
 .index-photo-row1 > .index-photo-column {
@@ -369,6 +373,11 @@ body{
   padding: 0px 8px;
 }
 
+.index-photo-row4,
+.index-photo-row4 > .index-photo-column {
+  padding: 8px 8px 0px 8px ;
+}
+
 /* Create four equal columns that floats next to each other */
 .index-photo-column {
   float: left;
@@ -376,7 +385,7 @@ body{
 }
 
 /* Clear floats after rows */
-.index-photo-row1:after, .index-photo-row2:after, .index-photo-row3:after {
+.index-photo-row1:after, .index-photo-row2:after, .index-photo-row3:after, .index-photo-row4:after {
   content: "";
   display: table;
   clear: both;
@@ -1013,17 +1022,32 @@ hr {
  .three-photo-row1 > .three-photo-column {
    padding: 12px 8px;
  }
+/*
+ .index-photo-row1,
+ .index-photo-row1 > .index-photo-column {
+   padding: 12px 8px;
+ } */
+
+ .index-photo-row2,
+ .index-photo-row2 > .index-photo-column {
+   padding: 12px 8px;
+ }
+
+  .index-photo-row1 {
+    margin: 0px;
+    padding: 12px 8px 4px 8px;
+  }
+
+  .index-photo-row2{
+    margin: 0px;
+    padding: 0px 8px;
+}
 
   .index-photo-column {
    width: 50%;
  }
 
- .index-photo-row1,
- .index-photo-row1 > .index-photo-column {
-   padding: 12px 8px;
- }
-
- .index-photo-row2, .index-photo-row3 {
+ .index-photo-row3, .index-photo-row4 {
    display: none;
  }
 
