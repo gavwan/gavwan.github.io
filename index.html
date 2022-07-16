@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 <!-- your webpage info goes here -->
 
-		<title>Tech Finder UK | The place to find cheap tech!</title>
+		<title>KWBadminton | The place all about badminton</title>
 
 	<meta charset= "utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="author" content="Gavin Wan"/>
-	<meta name="description" content="Welcome to Tech Finder UK! Here you can find budget/student friendly products at a lower price but offers similar functionality to more expensive products. We will run through the usability of each product as either as a every day carry or something suitable for your tech!
-						 We will have how to’s and reviews so stay tuned!"/>
+	<meta name="description" content="Welcome to KWBadminton, here is where we talk about rackets, strings, grip and many more!"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->
 	<link rel="stylesheet" href="style.css" type="text/css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 	<link rel="apple-touch-icon" sizes="180x180" href="images/180x180.png" />
 
@@ -27,255 +34,240 @@
 
 	<div id="page">
     <div id="master-header">
-      <div id="header">
-        <a href="index.html" id="logo">
-          <img src="images/TechFinderHeader.jpg" alt="Tech Finder UK" height= 100px>
-        </a>
-				<div id="social-media-icon">
-					<a href="https://facebook.com/TechFinderUK" class="fa fa-facebook"></a>
-					<a href="https://instagram.com/TechFinderUK" class="fa fa-instagram"></a>
-					<a href="https://twitter.com/TechFinderUK" class="fa fa-twitter"></a>
-					<a href="https://www.youtube.com/channel/UCT25ZsbbYBNpd-vaDhaTf_w" class="fa fa-youtube"></a>
-				</div>
+      <div class="info-header">
+        <p><i class="fa fa-phone" aria-hidden="true"></i>  07599343096</p>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i>  kwdmclub@gmail.com</p>
       </div>
-      <div class="nav">
-        <label for="toggle" id="burger-menu-label">&#9776;</label>
-        <input type="checkbox" id="toggle"/>
-        <div class="menu">
-          <a href="index.html" class= "active">Home</a>
-					<a href="reviews.html">Reviews</a>
-		      <a href="howto.html">How to</a>
-					<a href="apps.html">Apps</a>
-					<a href="about.html">About</a>
-					<a href="contactus.html">Contact Us</a>
-					<div class="search-container">
-						<form action="search.html" class="active">
-							<button id="search" type="submit"><i class="fa fa-search"></i></button>
-						</form>
-				  </div>
-		    </div>
-    	</div>
-		</div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="images/KWLOGO.png" alt="Bootstrap" width="80" height="80" class="d-inline-block">
+                <span class="hidden">KWBadminton</span>
+              </a>
+            <button
+            	class="navbar-toggler"
+            	type="button"
+            	data-bs-toggle="collapse"
+            	data-bs-target="#toggleMobileMenu"
+            	aria-controls="toggleMobileMenu"
+            	aria-expanded="false"
+            	aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+
+                <ul class="navbar-nav ms-auto text-center">
+                    <li>
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="rackets.html">Rackets</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="strings.html">Strings</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="apparel.html">Apparel</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+    </div>
 		<div class="content">
-			<div class="homepage-info1">
-				<div id="leftbox" class="fadeIn">
-					<h3>What can you find at TechFinderUK?</h3>
-						<p>
-						 Welcome to Tech Finder UK! Here you can find budget/student friendly products at a lower price!
-					 </p>
-				</div>
-				<div id="rightbox">
-						<img src="images/TechFinder-Homepage.png" class="fadeIn-image" style="height:260px;"/>
-				</div>
-			</div>
-			<div class="homepage-info2">
-				<div id="rightbox" class="star">
-					<h3>What can you find at TechFinderUK?</h3>
-					 <p>
-						 We do reviews of tech product, create how to's and recommend applications!
-					 </p>
-				</div>
-				<div id="leftbox">
-					<img src="images/setup2.jpg" class="star" style="height:260px;"/>
-				</div>
-			</div>
-			<div class="homepage-info3">
-				<h1>Favourite Posts</h1>
-				<div class="three-photo-row">
-				  <div class="three-photo-column">
-						<a href="reviews/reviews-post-00003/post-00003.html">
-					    <div class="index-image-box">
-					      <img class="latest-image" src="index-photos/post-00003.png" alt="Nonda USB-C Adapter" style="width:100%">
-					    </div>
-						</a>
-						<p>Nonda USB-C to USB-A Adapter Review</p>
-				  </div>
-				  <div class="three-photo-column">
-						<a href="howto/howto-post-00001/post-00001.html">
-				    	<div class="index-image-box">
-				      	<img class="latest-image" src="howto/howto-post-00001/post-00001(1).png" alt="Reformat external drive in MacOS" style="width:100%">
-							</div>
-						</a>
-						<p>How to reformat your external drive/USB on MacOS</p>
-				  </div>
-				  <div class="three-photo-column">
-						<a href="apps/apps-post-00001/post-00001.html">
-				    	<div class="index-image-box">
-				      	<img class="latest-image" src="apps/apps-post-00001/doubletake-icon.png" alt="DoubleTake Mobile App" style="width:100%">
-				    	</div>
-						</a>
-						<p>DoubleTake Mobile App Review</p>
-				  </div>
-				</div>
-			</div>
-			<div class="homepage-info4">
-				<a class="star" id="search-link" href="reviews.html">
-					<div class="card">
-						<div class="icon-link">
-							<img src="images/reviews.png">
-						</div>
-						<div class="card-info">
-							<h3>Tech Reviews</h3>
-							<p>
-								Find cheap tech gadget reviews here! We look at budget accessories like dongles and cables which are just as good but at a lower price!
-							</p>
-						</div>
-					</div>
-				</a>
-				<a class="star" id="search-link" href="howto.html">
-					<div class="card">
-						<div class="icon-link">
-							<img src="images/howto.png">
-						</div>
-						<div class="card-info">
-							<h3>How to</h3>
-							<p>
-								Not sure how to use a piece of software? Come and check out our how to's! We show you a short but detailed method to download software!
-							</p>
-						</div>
-					</div>
-				</a>
-				<a class="star" id="search-link" href="apps.html">
-					<div class="card">
-						<div class="icon-link">
-							<img src="images/apps.png">
-						</div>
-						<div class="card-info">
-							<h3>Applications</h3>
-							<p>
-								We post apps that you haven't heard before to help boost productivity, improve gaming experience or make your day to day life easier!
-							</p>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="homepage-info5">
-				<h1>Latest Reviews</h1>
-				<div class="index-photo-row1">
-					<div class="index-photo-column">
-						<div class="index-image-box">
-							<img class="latest-image" src="images/coming-soon.png" alt="Coming Soon" style="width:100%">
-						</div>
-					</div>
-					<div class="index-photo-column">
-						<a href="reviews/reviews-post-00012/post-00012.html">
-							<div class="index-image-box">
-								<img class="latest-image" src="index-photos/post-00012.png" alt="Sonos Roam Review" style="width:100%">
-							</div>
-						</a>
-					</div>
-					<div class="index-photo-column">
-						<a href="reviews/reviews-post-00011/post-00011.html">
-							<div class="index-image-box">
-								<img class="latest-image" src="index-photos/post-00011.png" alt="elago Apple Watch W2 Stand Review" style="width:100%">
-							</div>
-						</a>
-					</div>
-					<div class="index-photo-column">
-						<a href="reviews/reviews-post-00010/post-00010.html">
-							<div class="index-image-box">
-								<img class="latest-image" src="index-photos/post-00010.png" alt="Aukey Omnia USB-C 20W Charger Review" style="width:100%">
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="index-photo-row2">
-					<div class="index-photo-column">
-						<a href="reviews/reviews-post-00009/post-00009.html">
-							<div class="index-image-box">
-								<img class="latest-image" src="index-photos/post-00009.png" alt="Huawei WiFi AX3 (WiFi 6+) Router Review" style="width:100%">
-							</div>
-						</a>
-					</div>
-					<div class="index-photo-column">
-						<a href="reviews/reviews-post-00008/post-00008.html">
-							<div class="index-image-box">
-								<img class="latest-image" src="index-photos/post-00008.png" alt="uni 8-in-1 USB-C Hub Review" style="width:100%">
-							</div>
-						</a>
-					</div>
-					<div class="index-photo-column">
-						<a href="reviews/reviews-post-00007/post-00007.html">
-							<div class="index-image-box">
-								<img class="latest-image" src="index-photos/post-00007.png" alt="Mophie Wireless Charging Stand" style="width:100%">
-							</div>
-						</a>
-					</div>
-					<div class="index-photo-column">
-						<a href="reviews/reviews-post-00006/post-00006.html">
-							<div class="index-image-box">
-								<img class="latest-image" src="index-photos/post-00006.png" alt="Syntech USB-C to HDMI Adapter" style="width:100%">
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="index-photo-row3">
-					<div class="index-photo-column">
-						<a href="reviews/reviews-post-00005/post-00005.html">
-							<div class="index-image-box">
-								<img class="latest-image" src="index-photos/post-00005.png" alt="SanDisk Duak USB Drive" style="width:100%">
-							</div>
-						</a>
-					</div>
-					<div class="index-photo-column">
-						<a href="reviews/reviews-post-00004/post-00004.html">
-							<div class="index-image-box">
-								<img class="latest-image" src="index-photos/post-00004.png" alt="WD HDD" style="width:100%">
-							</div>
-						</a>
-					</div>
-					<div class="index-photo-column">
-						<a href="reviews/reviews-post-00003/post-00003.html">
-							<div class="index-image-box">
-								<img class="latest-image" src="index-photos/post-00003.png" alt="Nonda Adapter" style="width:100%">
-							</div>
-						</a>
-					</div>
-					<div class="index-photo-column">
-						<a href="reviews/reviews-post-00002/post-00002.html">
-							<div class="index-image-box">
-								<img class="latest-image" src="index-photos/post-00002.png" alt="Blaupunkt Spray" style="width:100%">
-							</div>
-						</a>
-					</div>
+      <div class="main-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+              <div class="header-text">
+                <h2>Welcome to <em>KWBadminton</em></h2>
+                <p>Badminton Restring by KWBadminton Restring has been in South East Midlands for the past 5 years since 2017.</p>
+                <div class="buttons">
+                  <div class="big-border-button">
+                    <a href="contests.html">Explore our Strings</a>
+                  </div>
+                  <div class="icon-button">
+                    <a href="https://www.youtube.com/channel/UCVUXxkJtXW6Ug07ncS4ZTPg" target="_blank"><i class="fa fa-play"></i> Watch Our Video Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner2">
+        <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="header-text">
+              <img src="images/KWBadmintonBoard.JPG" alt="" height="700px">
+            </div>
+          </div>
+          <div class="col">
+            <div class="header-text">
+              <h2>Why did we start <em>KWBadminton?</em></h2>
+              <p> We originally started KWBadminton because we wanted to have a fun badminton session with a group of friends at similar playing ability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="featured-items" id="featured-items">
+        <div class="banner3">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1">
+                <div class="header-text">
+                  <h2><u>Recent Tournament Results</u></h2>
+                </div>
+              </div>
+            </div>
+          </div>  
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="owl-features owl-carousel" style="position: relative; z-index: 5;">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="images/ISO2022.png" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <h4>ISO Spring Badminton Tournament 2022</h4>
+                        <ul>
+                          <li><span>Men's Singles AB Winner:</span> OT ⁣Poon⁣</li>
+                          <li><span>Women’s Doubles B Runner Up⁣:</span> Ho Kei Leung & Olivia Blackmore</li>
+                          <li><span>Men’s Doubles C 3rd Place:</span> James Tse & Wayne Cheung</li>
+                          <li><span>Men’s Doubles AB Consolation Prize:</span> Gavin Wan & Thithawat Trakoolwilaiwan</li>
+                          <li><span>Women’s Doubles AB 4th Place⁣:</span> Ho Kei Leung & Moon Yiu</li>
+                          <li><span>Mixed Doubles B 4th Place⁣:</span> Ho Kei Leung & Henry Wong</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="images/HNR2022.png" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <h4>Hit & Run Badminton Tournament 2022</h4>
+                        <ul>
+                          <li><span>Mixed Doubles LB C Winner:</span> James Tse & Bella</li>
+                          <li><span>Men’s Doubles LB B Winner:</span> Gavin Wan & Richard Tan</li>
+                          <li><span>Mixed Doubles LB B Runner Up:</span> Ho Kei Leung & Henry Wong</li>
+                          <li><span>Women’s Doubles B Winner:</span> Ai Yin Chen & Moon Cai</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="images/WINC2022.JPG" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <h4>Hampshire Tier 4 Badminton Tournament 2022</h4>
+                        <ul>
+                          <li><span>Men's Doubles Winner:</span>  Martin Mai & Farhan Asghar</li>
+                          <li><span>Mixed Doubles Semi Finalist</span> Alex Chu & Miko Zhong</li>
+                          <li><span>Mixed Doubles Semi Finalist</span> Zhi Lin Ng & Ai Yin Chen</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="images/POWERSHOT2022.JPG" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <h4>LPC Charity Badminton Tournament 2022</h4>
+                        <ul>
+                          <li><span>Men's Doubles Winner:</span> Gavin Wan & Athan Siah</li>
+                          <li><span>Women’s Doubles Winner:</span> Ai Yin Chen & Ho Kei Leung</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="images/BS2021.JPG" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <h4>Broken Strings Badminton Tournament 2021</h4>
+                        <ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="images/LEBC2021.JPG" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <h4>LEBC Winter Badminton Tournament 2021</h4>
+                        <ul>
+                          <li><span>Men's Doubles Winner:</span> Jack Lau & Gavin Wan</li>
+                          <li><span>Mixed Doubles Runner Up:</span> Jack Lau & Mia Petchey</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="images/ISO2021.JPG" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <h4>ISO Autumn Badminton Tournament 2021</h4>
+                        <ul>
+                          <li><span>Men's Doubles Winner:</span> James Tse & Gavin Wan</li>
+                          <li><span>Mixed Doubles 3rd Place:</span> Gavin Wan & Ho Kei Leung</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="images/KWBDM2021.png" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <h4>KWBadminton 4th Year Anniversary Badminton Tournament 2021</h4>
+                        <ul>
+                          <li><span>Doubles Winner:</span> Kieran Cheung & Nick Oh</li>
+                          <li><span>Doubles Runner Up:</span> Cynthia Sathiyarajan & Gavin Wan</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 
-				</div>
-
-				<div class="index-photo-row4">
-					<div class="index-photo-column">
-						<a href="reviews/reviews-post-00001/post-00001.html">
-							<div class="index-image-box">
-								<img class="latest-image" src="index-photos/post-00001.png" alt="MacBook Pro" style="width:100%">
-							</div>
-						</a>
-					</div>
-					<div class="index-photo-column">
-						<div class="index-image-box">
-							<img class="latest-image" src="images/unknown.png" alt="Unknown" style="width:100%">
-						</div>
-					</div>
-					<div class="index-photo-column">
-						<div class="index-image-box">
-							<img class="latest-image" src="images/unknown.png" alt="Unknown" style="width:100%">
-						</div>
-					</div>
-					<div class="index-photo-column">
-						<div class="index-image-box">
-							<img class="latest-image" src="images/unknown.png" alt="Unknown" style="width:100%">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<footer class="master-footer">
 		<div class="main-footer">
 			<div class="left-footer">
-				<p>Tech Finder UK &copy; 2020</p>
-				<p>Created by: Gavin Wan</p>
+				<p>KWBadminton &copy; 2022</p>
 				<p>
-					<a href="mailto:techfinderuk@gmail.com">Email: techfinderuk@gmail.com</a>
+					<a href="mailto:kwdmclub@gmail.com">Email: kwdmclub@gmail.com</a>
 				</p>
 			</div>
 			<ul class="footer-nav">
@@ -286,11 +278,15 @@
 		</div>
 	</footer>
 
-	<script src="js/jquery-3.5.1.min.js"></script>
-	<script src="js/search.js"></script>
-	<script src="js/fadeIn.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 
-
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
 </html>
