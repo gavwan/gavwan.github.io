@@ -70,7 +70,9 @@ body{
   background-position: top;
 } */
 
-/* Add a black background color to the top navigation */
+#strings-main{
+  background-color: #BBE9FE;
+}
 
 
 .navbar{
@@ -359,6 +361,23 @@ section.featured-items {
   transition: 0.2s ease-in-out;
 }
 
+.string-header{
+  padding-top: 50px;
+}
+/* 
+#basic{
+  box-shadow: 0 5px 20px rgba(152, 226, 253, 0.9);
+}
+
+#performance{
+  box-shadow: 0 5px 20px rgba(245, 174, 227, 0.9);
+}
+
+#elite{
+  box-shadow: 0 5px 20px rgba(140, 238, 174, 0.9);
+} */
+
+
 .card:hover {
   height: 360px;
 }
@@ -440,6 +459,14 @@ section.featured-items {
 }
 
 @media only screen and (max-width: 1200px) {
+  .homepage-info4 {
+    height: auto;
+  }
+  .card{
+    margin: 50px 80px;
+  }
+
+@media only screen and (max-width: 880px) {
   .homepage-info4 {
     height: auto;
   }
