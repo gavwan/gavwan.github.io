@@ -438,3 +438,11 @@ section.featured-items {
 .footer-nav li + li {
   margin-left: 15px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .homepage-info4 {
+    height: auto;
+  }
+  .card{
+    margin: 50px 35px;
+  }
