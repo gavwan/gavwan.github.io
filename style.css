@@ -362,7 +362,7 @@ section.featured-items {
 }
 
 .string-header{
-  padding-top: 50px;
+  padding-top: 60px;
 }
 /*
 #basic{
@@ -379,7 +379,7 @@ section.featured-items {
 
 
 .card:hover {
-  height: 360px;
+  height: 380px;
 }
 
 .icon-link{
@@ -393,12 +393,13 @@ section.featured-items {
 
 .card-info {
   position: relative;
-  padding: 5px;
+  padding: 3px;
   text-align: center;
-  color: #111111;
+  color: #3a3b3c;
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
+  font-family: Fester;
 }
 
 .card:hover .card-info {
