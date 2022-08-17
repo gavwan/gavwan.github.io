@@ -73,16 +73,15 @@ header > p {
 .tokens {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 10px;
+  padding:  0 2em;
   max-width: 480px;
   overflow: hidden;
-  text-align: center;
-  color: #000;
   background-color: #fffa;
   backdrop-filter: blur(10px) saturate(160%) contrast(180%);
   -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
   border-radius: 2em;
   box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
@@ -102,7 +101,7 @@ header > p {
 hr.line1 {
   border: 1px solid red;
   border-color: #0E86D4;
-  max-width: 400px;
+  width: 90%;
 }
 
 
@@ -223,7 +222,7 @@ a {
 
 @media only screen and (max-width: 770px) {
   .tokens{
-    max-width: 416px;
+    max-width: 350px;
   }
 
   .self-tokens{
@@ -232,5 +231,10 @@ a {
   }
   .other-tokens{
     margin-top: 0;
+  }
+
+  th, td {
+
+    padding: 10px 0px;
   }
 }
