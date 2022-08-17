@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
+
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'fester', sans-serif;
-  color: #fff;
+  color: #000000;
 }
 
 @font-face{
@@ -12,12 +14,11 @@ body, html {
 
 p{
   line-height: 1em;
-  color: #000000;
   text-align: center;
 }
 
 body {
-  background: url(./images/bio-background.jpg) no-repeat center center fixed;
+  background: url(./images/bio-goldbackground.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -69,6 +70,75 @@ header > p {
   color: #5d5d5d;
 }
 
+.tokens {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 480px;
+  overflow: hidden;
+  text-align: center;
+  color: #000;
+  background-color: #fffa;
+  backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  border-radius: 2em;
+  box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tokens h2{
+  text-decoration: underline;
+}
+
+.self-tokens{
+  width: 230px;
+  float: left;
+}
+.other-tokens{
+  margin-top: 35px;
+}
+
+hr.line1 {
+  border: 1px solid red;
+  border-color: #0E86D4;
+  max-width: 400px;
+}
+
+
+.AY-restrings{
+  padding: 20px 0;
+}
+
+.AY-restrings-table{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-color: #96D4D4;
+  padding: 10px;
+  width: 120px;
+  margin: 0;
+}
+
+.collected-rackets{
+  padding: 20px 0;
+}
+
+
+.progress-circle {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+
 ul {
   box-sizing: border-box;
   list-style: none;
@@ -107,4 +177,56 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+/*** <--- CIRCLE STYLES ---> ***/
+
+.circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background: #d3d3d3;
+  overflow: hidden;
+}
+.circle.per-20 {
+  background-image: conic-gradient(#0E86D4 20%, #d3d3d3 0);
+}
+.circle.per-40 {
+  background-image: conic-gradient(#0E86D4 40%, #d3d3d3 0);
+}
+.circle.per-60 {
+  background-image: conic-gradient(#0E86D4 60%, #d3d3d3 0);
+}
+.circle.per-80 {
+  background-image: conic-gradient(#0E86D4 80%, #d3d3d3 0);
+}
+.circle .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115px;
+  height: 115px;
+  background: #fff;
+  color: black;
+  border-radius: 50%;
+    font-family: "Lato";
+  font-size: 1.85em;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 770px) {
+  .self-tokens{
+    width:100%;
+    float: none;
+  }
+  .other-tokens{
+    margin-top: 0;
+  }
 }
