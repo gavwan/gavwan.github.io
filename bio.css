@@ -222,7 +222,7 @@ a {
 
 @media only screen and (max-width: 770px) {
   .tokens{
-    max-width: 350px;
+    max-width: 400px;
   }
 
   .self-tokens{
@@ -238,3 +238,8 @@ a {
     padding: 10px 0px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .tokens{
+    max-width: 350px;
+  }
