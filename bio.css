@@ -241,6 +241,6 @@ a {
 
 @media only screen and (max-width: 600px) {
   .tokens{
-    max-width: 330px;
+    max-width: 320px;
   }
 }
