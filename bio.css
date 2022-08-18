@@ -18,7 +18,7 @@ p{
 }
 
 body {
-  background: url(./images/bio-goldbackground.jpg) no-repeat center center fixed;
+  background: url(./images/bio-bluebackground.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -241,5 +241,5 @@ a {
 
 @media only screen and (max-width: 600px) {
   .tokens{
-    max-width: 350px;
+    max-width: 330px;
   }
