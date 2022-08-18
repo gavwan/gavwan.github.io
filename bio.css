@@ -7,6 +7,17 @@ body, html {
   color: #000000;
 }
 
+.blackbody{
+  margin: 0;
+  padding: 0;
+  font-family: 'fester', sans-serif;
+  color: #ffffff;
+}
+
+/* .blackbody h1, h2, h3, h4{
+  color: #ffffff;
+} */
+
 @font-face{
   font-family: "Fester";
   src: url('fonts/FesterFF/Fester Medium.otf');
@@ -70,7 +81,7 @@ header > p {
   color: #5d5d5d;
 }
 
-.tokens {
+.info-box{
   box-sizing: border-box;
   margin: 0 auto;
   padding:  0 2em;
@@ -86,12 +97,19 @@ header > p {
   align-items: center;
 }
 
-.tokens h2{
+#black-info{
+  background-color: #000000;
+  border: 1px solid white;
+
+}
+
+.info-box h2{
   text-decoration: underline;
+
 }
 
 .self-tokens{
-  width: 230px;
+  width: 210px;
   float: left;
 }
 .other-tokens{
@@ -105,18 +123,18 @@ hr.line1 {
 }
 
 
-.AY-restrings{
+.restrings{
   padding: 20px 0;
 }
 
-.AY-restrings-table{
+.restrings-table{
   text-align: center;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-th, td {
+.restrings-table th, td {
   border: 1px solid black;
   border-collapse: collapse;
   border-color: #96D4D4;
@@ -137,6 +155,21 @@ th, td {
   display: flex;
 }
 
+
+.black-list li{
+  background-color: #000000;
+  backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  border-radius: 10em;
+  border: 1px solid white;
+  margin: 1.4em 0;
+  box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+}
+
+.black-list a{
+  color: white;
+  text-decoration: none;
+}
 
 ul {
   box-sizing: border-box;
@@ -168,6 +201,10 @@ ul > li > a {
 a {
   color: black;
   text-decoration: none;
+}
+
+.white-svg{
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(340deg) brightness(98%) contrast(105%);
 }
 
 .email {
@@ -220,8 +257,105 @@ a {
   color: rgba(0, 0, 0, 0.75);
 }
 
+.palette {
+  --g:10px; /* The gap between shapes*/
+  --s:40px; /* the size*/
+
+  height: 200px;
+  width: 200px;
+  position:relative;
+  display:inline-block;
+  overflow:hidden;
+}
+.palette > * {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border:var(--s) solid var(--c,red);
+  border-radius:50%;
+  clip-path:polygon(
+    calc(50% + var(--g)/2) 50%,
+    calc(50% + var(--g)/2) 0%,
+    calc(68.19% - var(--g)/2) 0%,
+    50% calc(50% - var(--g)/2));
+}
+.color1 {
+  transform:rotate(20deg); /* 360/18 */
+  --c:white;
+}
+.color2 {
+  transform:rotate(40deg);
+  --c:white;
+}
+.color3 {
+  transform:rotate(60deg);
+  --c:white;
+}
+.color4 {
+  transform:rotate(80deg);
+  --c:white;
+}
+.color5 {
+  transform:rotate(100deg); /* 360/18 */
+  --c:white;
+}
+.color6 {
+  transform:rotate(120deg);
+  --c:white;
+}
+.color7 {
+  transform:rotate(140deg);
+  --c:white;
+}
+.color8 {
+  transform:rotate(160deg);
+  --c:white;
+}
+.color9 {
+  transform:rotate(180deg);
+  --c:white;
+}
+.color10 {
+  transform:rotate(-20deg);
+  --c:white;
+}
+.color11 {
+  transform:rotate(-40deg);
+  --c:white;
+}
+.color12 {
+  transform:rotate(-60deg);
+  --c:white;
+}
+.color13 {
+  transform:rotate(-80deg);
+  --c:white;
+}
+.color14 {
+  transform:rotate(-100deg);
+  --c:white;
+}
+.color15 {
+  transform:rotate(-120deg);
+  --c:white;
+}
+.color16 {
+  transform:rotate(-140deg);
+  --c:white;
+}
+.color17 {
+  transform:rotate(-160deg);
+  --c:white;
+}
+.color18 {
+  transform:rotate(0deg);
+  --c:white;
+}
+
 @media only screen and (max-width: 770px) {
-  .tokens{
+  .info-box{
     max-width: 400px;
   }
 
@@ -240,7 +374,7 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  .tokens{
+  .info-box{
     max-width: 320px;
   }
 }
