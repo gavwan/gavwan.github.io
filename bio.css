@@ -85,7 +85,7 @@ header > p {
   box-sizing: border-box;
   margin: 0 auto;
   padding:  0 2em;
-  max-width: 620px;
+  max-width: 650px;
   overflow: hidden;
   background-color: #fffa;
   backdrop-filter: blur(10px) saturate(160%) contrast(180%);
@@ -356,7 +356,7 @@ a {
 
 @media only screen and (max-width: 770px) {
   .info-box{
-    max-width: 400px;
+    max-width: 550px;
   }
 
   .self-tokens{
@@ -375,6 +375,6 @@ a {
 
 @media only screen and (max-width: 600px) {
   .info-box{
-    max-width: 320px;
+    max-width: 500px;
   }
 }
