@@ -375,6 +375,6 @@ a {
 
 @media only screen and (max-width: 600px) {
   .info-box{
-    max-width: 500px;
+    max-width: 450px;
   }
 }
