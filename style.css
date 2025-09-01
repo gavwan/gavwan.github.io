@@ -88,10 +88,7 @@ body{
   font-size: 25px;
 }
 
-.dropdown-item{
-  text-align: center;
-  font-size: 25px;
-}
+
 
 .main-banner {
   background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(images/cover.jpeg);
