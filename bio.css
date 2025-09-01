@@ -370,11 +370,12 @@ a {
   th, td {
 
     padding: 10px 0px;
+    font-size: .75em;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .info-box{
-    max-width: 450px;
+    max-width: 400px;
   }
 }
